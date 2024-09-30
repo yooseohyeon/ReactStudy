@@ -13,6 +13,7 @@ export default function Profile({ name, description, imgUrl }) {
                     <h3>{description}</h3>
                 </div>
                 <img
+                    /* 사용자가 프로필 이미지를 설정하지 않은 경우 (그래서 imgUrl가 빈 문자열인 경우) 기본 이미지를 넣도록 설정함 */
                     src={imgUrl !== '' ? imgUrl : defaultImg}
                     alt='profile'
                 />
